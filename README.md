@@ -1,5 +1,6 @@
 #Blog Web Application
  This is a simple blog application using node.js,express.js and Ejs.
+ Without Database.
 
  ##Live Demo
  You can view The Live Application Here:
