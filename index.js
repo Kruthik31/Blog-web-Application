@@ -4,17 +4,17 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import ejs from 'ejs';
 
-// Create an Express application
+
 const app = express();
 const PORT = 3000;
 
-// Get the current directory path
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 let posts = [];
 
-// Set up view engine
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
-// Helper function to render content with layout
+
 const renderWithLayout = async (res, view, locals = {}) => {
     const content = await ejs.renderFile(path.join(__dirname, 'views', `${view}.ejs`), locals);
     res.render('layout', { ...locals, content });
