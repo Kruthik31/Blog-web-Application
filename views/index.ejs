@@ -1,0 +1,13 @@
+<h1>Blog Posts</h1>
+<a href="/new">Create New Post</a>
+<ul>
+    <% posts.forEach((post, index) => { %>
+        <li>
+            <a href="/posts/<%= index %>"><%= post.title %></a>
+            <form action="/posts/<%= index %>?_method=DELETE" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+            <a href="/posts/<%= index %>/edit">Edit</a>
+        </li>
+    <% }) %>
+</ul>

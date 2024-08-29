@@ -1,0 +1,452 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: black;
+  background: url('./images/background\ final.webp') no-repeat center center/cover;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1{
+  
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+
+color: black;
+margin-top: 0;
+
+}
+
+ h2, h3, h4, h5, h6 {
+  
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+  
+  color: white;
+  margin-top: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 3px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+nav {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  animation: slideIn 1s ease;
+}
+
+nav a {
+  color: #333;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+.hero {
+  background: url('./images/background\ final.webp') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-blur: 4px;
+  animation: fadeIn 2s ease;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: slideUp 1s ease;
+}
+
+.hero h1 {
+  
+   
+  
+ 
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  
+  
+color:white ;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.5s ease 0.5s;
+}
+
+.hero .btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 1.5s ease 1s;
+}
+
+.hero .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 2s ease;
+}
+
+.article {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.article h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.article p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.article img {
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+
+form {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  animation: fadeInUp 1s ease;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button, .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 0.8rem;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+
+footer {
+  background-color: #fff;
+  color:black;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 3px solid black;
+  animation: fadeIn 2s ease;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+      font-size: 2 rem;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: #333;
+    background: url('./images/blueback.avif') no-repeat center center/cover;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .hero {
+    background: url('./images/blueback.avif') no-repeat center center/cover;
+    object-fit:contain;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    background-blur: 2px;
+    animation: fadeIn 2s ease;
+  }
+  nav a {
+      font-size: 0.9rem;
+      margin: 0 10px;
+  }
+
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1.2rem;
+  }
+
+  .hero .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+  }
+
+  .main-content {
+      padding: 10px;
+      margin: 10px auto;
+  }
+
+  .article h2 {
+      font-size: 1.8rem;
+  }
+
+  .article p {
+      font-size: 0.9rem;
+  }
+
+  form input[type="text"], 
+  form textarea {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  header h1 {
+      font-size: 2.8rem;
+  }
+
+  nav a {
+      font-size: 1rem;
+      margin: 0 12px;
+  }
+
+  .hero h1 {
+      font-size: 3rem;
+  }
+
+  .hero p {
+      font-size: 1.3rem;
+  }
+
+  .hero .btn {
+      padding: 12px 22px;
+      font-size: 1.1rem;
+  }
+
+  .main-content {
+      padding: 15px;
+      margin: 15px auto;
+  }
+
+  .article h2 {
+      font-size: 2rem;
+  }
+
+  .article p {
+      font-size: 1rem;
+  }
+
+  form input[type="text"], 
+  form textarea {
+      font-size: 1rem;
+      padding: 12px;
+  }
+}
+
+
+@media (min-width: 901px) {
+  header h1 {
+      font-size: 3rem;
+  }
+
+  nav a {
+      font-size: 1.1rem;
+      margin: 0 15px;
+  }
+
+  .hero h1 {
+      font-size: 3.5rem;
+  }
+
+  .hero p {
+      font-size: 1.5rem;
+  }
+
+  .hero .btn {
+      padding: 12px 25px;
+      font-size: 1.2rem;
+  }
+
+  .main-content {
+      padding: 20px;
+      margin: 20px auto;
+  }
+
+  .article h2 {
+      font-size: 2.5rem;
+  }
+
+  .article p {
+      font-size: 1.1rem;
+  }
+
+  form input[type="text"], 
+  form textarea {
+      font-size: 1.1rem;
+      padding: 15px;
+  }
+}
+
